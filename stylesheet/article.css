@@ -1,0 +1,289 @@
+@import "style.css";
+
+.article-title-bg{
+    background-image: url(../img/banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    color: white;
+    padding: 35px 50px 55px;
+}
+
+.prog{
+    margin-top: 200px;
+    color: var(--col-gray-font);
+}
+
+
+.more{
+ background-color: var(--col-blue);
+ border-top-left-radius: 70px;
+ border-top-right-radius: 70px;
+ color: white;
+ margin-top: 60px;
+}
+
+.more h2{
+margin: 100px 0 150px;
+font-weight: 700;
+font-size: 50px;
+}
+
+.more p{
+width: 60%;
+margin-bottom: 270px;
+font-style: normal;
+font-weight: 400;
+font-size: 35px;
+line-height: 150%;
+}
+
+
+.join{
+    background-color: var(--bg-color);
+    padding-top: 60px;
+}
+
+.join__flex{
+    display: flex;
+    gap: 80px;
+}
+
+.join__item{
+    background-color: white;
+    border-radius: 40px;
+    filter: drop-shadow(0px 11.0186px 33.0558px rgba(0, 0, 0, 0.06));
+    width: 50%;
+    padding: 40px;
+}
+
+.round{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: var(--col-blue);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.round p{
+    font-size: 50px;
+}
+
+.join h3{
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.light-line{
+    background-color: #D4D3FF;
+    height: 5px;
+    border-radius: 5px;
+}
+
+.line{
+    background-color: var(--col-blue);
+    height: 5px;
+    width: 25%;
+    border-radius: 5px;
+}
+
+.order{
+    width: 50px;
+    min-width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--col-blue);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.order p{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+.join__list li{
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+    margin: 40px 0;
+   
+}
+
+.ball{
+    flex-grow: 1;
+    text-align: right;
+}
+
+.join__list{
+    padding-left: 0;
+}
+
+
+.col-green .round, .col-green .order, .col-green .line{
+    background-color: var(--col-green);
+}
+.col-green .light-line{
+    background-color: #DDFEB9;
+}
+
+.col-green * {
+    color: black;
+}
+
+
+.uni{
+    background-color: var(--bg-color);
+    padding-top: 60px;
+}
+
+
+.uni__flex{
+display: flex;
+gap: 80px;
+}
+
+.uni__item{
+    background-image: url(../img/msu-card.jpg);
+    background-position: center;
+    border-radius: 30px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px;
+    width: 30%;
+    height: 600px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    color: white;
+}
+
+.uni__item:nth-child(2){
+    background-image: url(../img/bau-card.jpg);
+}
+
+.uni__item:nth-child(3){
+    background-image: url(../img/mfti-card.jpg);
+}
+
+.uni__price:nth-child(2){
+    margin-top: auto;
+    margin-bottom: 0;
+}
+.uni__price:nth-child(3){
+    margin-top: 5px;
+    margin-bottom: 25px;
+}
+
+
+.uni__name{
+    padding: 5px 10px;
+    background-color: var(--col-blue);
+    border-radius: 25px;
+}
+
+
+.video{
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+
+.comments_flex{
+    display: flex;
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.comment__flex{
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.comment{
+    background-color: white;
+    box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 25px;
+    padding: 20px;
+    width: 50%;
+}
+
+.comments{
+    background-color: var(--bg-color);
+    padding: 50px 0;
+}
+
+
+.comment__img{
+    border-radius: 50%;
+}
+
+.divider.blue .highlight{
+    background-color: var(--col-blue);
+}
+
+.divider.blue{
+    background-color: var(--col-gray-font);
+}
+
+
+@media screen and (max-width:400px) {
+
+    .more h2{
+        font-size: 35px;
+        margin: 50px 0;
+    }
+
+    .more p{
+        font-size: 20px;
+        margin-bottom: 50px;
+    }
+
+    .join__flex{
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+
+    .join__item{
+        width: 100%;
+    }
+
+    .uni__flex{
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+
+    .uni__item{
+        width: 100%;
+
+    }
+
+    .comments_flex{
+        flex-wrap: wrap;
+    }
+
+    .comment{
+        width: 100%;
+    }
+
+    .comment p{
+        font-size: 12px;
+    }
+
+    .comment img{
+        width: 90px;
+    }
+
+    .comment__flex{
+        gap: 20px;
+    }
+}
